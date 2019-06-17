@@ -4,173 +4,187 @@
                   android:orientation="vertical"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="#009999"
                   tools:context=".CadClienteActivity">
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                      xmlns:tools="http://schemas.android.com/tools"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:orientation="vertical"
-                      tools:context=".MediaActivity">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cad_func"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="#FF5722"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+        >
 
-            // NOME
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/name"/>
-
-            <EditText
-                    android:id="@+id/txtNome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text" />
-
-            // E-Mail
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/email" />
-
-            <EditText
-                    android:id="@+id/txtEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="textEmailAddress" />
-
-            // TELEFONE
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/telefone" />
-
-            <EditText
-                    android:id="@+id/txtTelefone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="phone" />
-
-            // CPF - CNPJ
+                    android:text="@string/edit_nome_func"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="20sp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/dados" />
-
-            <EditText
-                    android:id="@+id/txtDados"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="number"/>
-
-            // RUA
+                    android:text="@string/edit_cpf_func"
+                    android:textSize="20sp"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20sp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/rua" />
-
-            <EditText
-                    android:id="@+id/txtRua"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text" />
-
-            // BAIRRO
+                    android:text="@string/edit_email_func"
+                    android:textSize="20sp"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20sp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/bairro" />
-
-            <EditText
-                    android:id="@+id/txtBairro"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text" />
-
-            // CIDADE
+                    android:text="@string/edit_fone_func"
+                    android:textSize="20sp"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20sp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/cidade" />
-
-            <EditText
-                    android:id="@+id/txtCidade"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text" />
-
-            // ESTADOS
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/estado" />
-
-            <Spinner
-                    android:id="@+id/txtEstados"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text"/>
-
-            // CATEGORIA DE CLIENTES
+                    android:text="@string/edit_login_func"
+                    android:textSize="20sp"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20sp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/categoria" />
-
-            <Spinner
-                    android:id="@+id/txtCategoria"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:inputType="text"/>
-
-            // ENVIAR
-            <Button
-                    android:id="@+id/btnSalvar"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/salvar"
-                    android:textSize="15sp" />
-
-            // CANCELAR
-            <Button
-                    android:id="@+id/btnLimpar"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/limpar"
-                    android:textSize="15sp" />
+                    android:text="@string/edit_matricula_func"
+                    android:textSize="20sp"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20sp"
+            />
         </LinearLayout>
-    </ScrollView>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+        >
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nome_func"
+                    android:textColorHint="#000"
+                    android:padding="3dp"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_cpf_func"
+                    android:textColorHint="#000"
+                    android:padding="3dp"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email_func"
+                    android:textColorHint="#000"
+                    android:padding="3dp"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_fone_func"
+                    android:textColorHint="#000"
+                    android:padding="3dp"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_login_func"
+                    android:padding="3dp"
+                    android:textColorHint="#000"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_matricula_func"
+                    android:textColorHint="#000"
+                    android:padding="3dp"
+                    android:background="#fff"
+                    android:layout_margin="5sp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+        <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cad"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:background="#4dd0e1"
+                android:layout_margin="5sp"
+        />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancelar"
+                android:textSize="20sp"
+                android:background="#4dd0e1"
+                android:layout_margin="5sp"
+        />
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"
+            android:textSize="20sp"
+            android:background="#4dd0e1"
+            android:layout_margin="5sp"
+            android:padding="20sp"
+    />
+
+</LinearLayout>
+
+
+
 </LinearLayout>
