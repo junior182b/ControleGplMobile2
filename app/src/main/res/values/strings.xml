@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">ControleGplMobile2</string>
 
-                   <!--Strings do Login-->
+    <!--Strings do Login-->
+
+    <string name="hint_login">Login</string>
+    <string name="hint_ajuda">Ajuda</string>
+    <string name="hint_glpcont">GLP CONTROLE</string>
+    <string name="hint_entrar">Entrar</string>
+
+
+    <!--Menus-->
+
+    <string name="menu_estoque">Estoque</string>
+    <string name="menu_movimentaca">Movimentacao</string>
+    <string name="menu_relatorios">Relatórios</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_ajuda">Ajuda</string>
+    <string name="menu_sair">Sair</string>
+    <string name="menu_funcionario">Funcionario</string>
+    <string name="menu_produto">Produto</string>
+
+    <!--String cadastros-->
+
+    <string name="hiny">.</string>
+
 
 </resources>
